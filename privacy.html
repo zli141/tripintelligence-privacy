@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AeroStats – Privacy Policy</title>
+    <title>Trip Intelligence – Privacy Policy</title>
     <style>
         * {
             margin: 0;
@@ -104,82 +104,108 @@
 <body>
 
 <header>
-    <h1>✈ AeroStats</h1>
+    <h1>Trip Intelligence</h1>
     <p>Privacy Policy</p>
 </header>
 
 <div class="container">
-    <p class="updated">Last updated: May 2025</p>
+    <p class="updated">Last updated: June 2026</p>
 
     <div class="card">
         <h2>Overview</h2>
-        <p>AeroStats ("we", "our", or "us") is committed to protecting your privacy. This policy explains what information we collect, how we use it, and your choices.</p>
+        <p>Trip Intelligence ("we", "our", or "us") is a personal travel assistant for planning and tracking trips — flights, hotels, attractions, trains, and car rentals. This policy explains what information we collect, how we use it, who we share it with, and your choices.</p>
+        <p>We try to keep the list short. Trip Intelligence is designed to keep your trip data under your control: most of what we hold is what you typed in yourself.</p>
     </div>
 
     <div class="card">
         <h2>Information We Collect</h2>
         <ul>
-            <li><strong>Account information</strong> – email address used to sign in</li>
-            <li><strong>Flight data</strong> – flight numbers, routes, and dates you enter</li>
-            <li><strong>Device identifiers</strong> – used to manage multi-device sync and enforce device limits</li>
-            <li><strong>Advertising identifier (IDFA)</strong> – collected only with your explicit permission, used to show relevant ads</li>
-            <li><strong>Push notification token</strong> – used to deliver flight status alerts</li>
+            <li><strong>Account information</strong> – email address (or Apple's private relay address if you use Sign in with Apple); display name if Apple shares one.</li>
+            <li><strong>Trip data</strong> – trips, hotels, attractions, trains, and car rentals you create or import: names, addresses, dates, times, confirmation numbers, notes.</li>
+            <li><strong>Flight data</strong> – flight numbers, routes, dates, gate/baggage info pulled from the airline data provider.</li>
+            <li><strong>Map searches</strong> – the place names you search when picking a hotel, attraction, or train station address. Used by Apple's MapKit on your device — Trip Intelligence never sees the queries.</li>
+            <li><strong>AI inputs</strong> – when you ask Trip Intelligence to generate an itinerary or popular attractions, your destination name, day count, and chosen preferences (e.g. "foodie", "history") are sent to our AI provider. We do <strong>not</strong> send your real name, contact info, hotel confirmation numbers, or any other personal details.</li>
+            <li><strong>Device identifiers</strong> – used to manage multi-device sync and enforce subscription device limits.</li>
+            <li><strong>Push notification token</strong> – used to deliver flight, trip, hotel, train, and car rental reminders.</li>
+            <li><strong>Advertising identifier (IDFA)</strong> – collected only with your explicit App Tracking Transparency permission, used to show relevant ads. Premium subscribers don't see ads, and IDFA is not collected for them.</li>
         </ul>
     </div>
 
     <div class="card">
         <h2>How We Use Your Information</h2>
         <ul>
-            <li>To sync your flights across your devices via Firebase</li>
-            <li>To send flight status notifications (gate changes, delays, boarding)</li>
-            <li>To display Live Activities on your Lock Screen</li>
-            <li>To show advertisements and keep the app free</li>
-            <li>To enforce subscription and device access limits</li>
+            <li>To sync your trips and travel data across your signed-in devices.</li>
+            <li>To send notifications — trip start reminders, hotel check-in/out, train departures, car rental pickup/return, and flight status alerts.</li>
+            <li>To display Live Activities on your Lock Screen for active flights.</li>
+            <li>To generate AI itineraries, address suggestions, and destination recommendations when you ask for them.</li>
+            <li>To show advertisements (free tier only) and keep the app free.</li>
+            <li>To enforce subscription and device access limits.</li>
         </ul>
+        <p>We do not sell your personal data. We do not advertise our app to people based on what's inside your trips.</p>
     </div>
 
     <div class="card">
         <h2>Third-Party Services</h2>
-        <p>AeroStats uses the following third-party services, each with their own privacy policies:</p>
+        <p>Trip Intelligence uses the following third-party services. Each has its own privacy policy and we recommend you review them.</p>
         <ul>
-            <li><strong>Firebase (Google)</strong> – authentication, cloud storage, and push notifications</li>
-            <li><strong>Google AdMob</strong> – advertising</li>
-            <li><strong>FlightAware</strong> – live flight tracking data</li>
-            <li><strong>AeroDataBox</strong> – flight status and schedule data</li>
-            <li><strong>OpenSky Network</strong> – live aircraft position data</li>
+            <li><strong>Firebase (Google)</strong> – authentication, cloud storage (Firestore), and push notifications (FCM).</li>
+            <li><strong>Apple Sign in with Apple</strong> – optional sign-in; your real email stays with Apple if you choose the private relay.</li>
+            <li><strong>Anthropic (Claude)</strong> – AI itinerary generation, attraction suggestions, and trip duration estimates. Anthropic does not use API data to train their models (per their commercial terms).</li>
+            <li><strong>Unsplash</strong> – destination photos. Only your search keywords (e.g. "Paris", "Iceland") leave Trip Intelligence for image lookup.</li>
+            <li><strong>Apple MapKit</strong> – place autocomplete, geocoding, and map rendering. Queries are processed by Apple on your device or its servers per Apple's privacy practices.</li>
+            <li><strong>Google AdMob</strong> – advertising for free-tier users only.</li>
+            <li><strong>AeroDataBox</strong> – flight status and schedule data.</li>
+            <li><strong>OpenSky Network</strong> – live aircraft position data.</li>
         </ul>
     </div>
 
     <div class="card">
-        <h2>Advertising and Tracking</h2>
-        <p>We use Google AdMob to show ads. When you grant App Tracking Transparency (ATT) permission, your advertising identifier may be used to show personalized ads. You can opt out at any time in Settings → Privacy & Security → Tracking, or within the app's Settings.</p>
-        <p>If you subscribe to AeroStats Premium, ads are removed entirely.</p>
+        <h2>AI Data Handling</h2>
+        <p>When you use AI features (itinerary generation, popular destinations, duration suggestions), Trip Intelligence sends limited context to our AI provider via a server we control:</p>
+        <ul>
+            <li>Itinerary generation: destination, day count, preference tags, and any "extra notes" you type in.</li>
+            <li>Attraction suggestions: just the trip destination.</li>
+            <li>Duration suggestion: just the destination name.</li>
+        </ul>
+        <p>We do <strong>not</strong> send any of your trip's hotels, attractions, confirmation numbers, contact information, or anything you didn't explicitly type into the AI prompt. We do not store AI request bodies — only the parsed structured result is saved to your trip.</p>
     </div>
 
     <div class="card">
-        <h2>Data Retention</h2>
-        <p>Your flight data and account information are stored until you delete your account. You can delete your account and all associated data from within the app at any time.</p>
+        <h2>Advertising and Tracking</h2>
+        <p>We use Google AdMob to show ads. When you grant App Tracking Transparency (ATT) permission, your advertising identifier may be used to show personalized ads. You can opt out at any time in Settings → Privacy &amp; Security → Tracking, or within the app's Settings.</p>
+        <p>If you subscribe to Trip Intelligence Premium, ads are removed entirely and tracking permission becomes irrelevant.</p>
+    </div>
+
+    <div class="card">
+        <h2>Data Retention &amp; Your Rights</h2>
+        <p>Your trip data, flights, and account information are stored until you delete them. You can:</p>
+        <ul>
+            <li><strong>Delete individual items</strong> – swipe-to-delete any trip, hotel, attraction, train, or rental from the app.</li>
+            <li><strong>Delete your account</strong> – Settings → Account → Delete Account removes your authentication record and all trip data from our servers.</li>
+            <li><strong>Sign out without deleting</strong> – your cloud copy is preserved; signing back in restores everything.</li>
+            <li><strong>Request your data</strong> – contact us by email and we will provide a JSON export of everything we hold for your account.</li>
+        </ul>
     </div>
 
     <div class="card">
         <h2>Children's Privacy</h2>
-        <p>AeroStats is not directed at children under 13. We do not knowingly collect personal information from children.</p>
+        <p>Trip Intelligence is not directed at children under 13. We do not knowingly collect personal information from children. If you believe a child has provided information to us, please contact us and we will delete it.</p>
     </div>
 
     <div class="card">
         <h2>Changes to This Policy</h2>
-        <p>We may update this privacy policy from time to time. Changes will be posted on this page with an updated date.</p>
+        <p>We may update this privacy policy from time to time. Changes will be posted on this page with an updated date. Material changes that affect how we use your data will be announced in-app.</p>
     </div>
 
     <div class="card">
         <h2>Contact</h2>
-        <p>If you have any questions about this privacy policy, please contact us at:<br>
-        <a href="mailto:leilimeisrt@gmail.com">kiptop@hotmail.com</a></p>
+        <p>If you have any questions about this privacy policy or want to exercise your data rights, please contact us at:<br>
+        <a href="mailto:kiptop@hotmail.com">kiptop@hotmail.com</a></p>
     </div>
 </div>
 
 <footer>
-    © 2026 AeroStats. All rights reserved.
+    © 2025 Trip Intelligence. All rights reserved.
 </footer>
 
 </body>
